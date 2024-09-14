@@ -58,7 +58,14 @@ var rangeValue = function() {
         };
 
 elem.addEventListener("input", rangeValue);
+var a = 0;
+function m1()
+{
 
+a = Math.floor(Math.random()*10);
+
+}
+setInterval(m1,1000);
 
 
             document.getElementById('temperature').innerHTML = temp;
@@ -66,7 +73,7 @@ elem.addEventListener("input", rangeValue);
             document.getElementById('altitude').innerHTML = alt;
             document.getElementById('pressure').innerHTML = press;
             document.getElementById('rfidTag').innerHTML = rfid;
-            document.getElementById('humidity').innerHTML = hum;
+            document.getElementById('humidity').innerHTML = hum-a;
 
             
 
